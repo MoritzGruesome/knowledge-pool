@@ -10,16 +10,16 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, technologies, imageUrl }: ProjectCardProps) => {
   return (
-    <Card className="overflow-hidden transition-all hover:scale-105 hover:shadow-xl bg-secondary/10 border-secondary/20">
+    <Card className="overflow-hidden transition-all hover:scale-105 hover:shadow-xl bg-white/5 backdrop-blur-sm border-white/10">
       <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
       <CardHeader>
-        <CardTitle className="text-primary">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle className="text-white">{title}</CardTitle>
+        <CardDescription className="text-white/80">{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
-            <Badge key={tech} variant="secondary">
+            <Badge key={tech} variant="secondary" className="bg-white/10 text-white">
               {tech}
             </Badge>
           ))}

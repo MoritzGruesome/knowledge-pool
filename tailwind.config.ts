@@ -25,11 +25,11 @@ export default {
         background: "#1A1F2C",
         foreground: "#8E9196",
         primary: {
-          DEFAULT: "#9b87f5",
+          DEFAULT: "#0EA5E9",
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#7E69AB",
+          DEFAULT: "#33C3F0",
           foreground: "#ffffff",
         },
       },

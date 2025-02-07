@@ -1,5 +1,7 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -9,8 +11,14 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ title, description, technologies, imageUrl }: ProjectCardProps) => {
+  const navigate = useNavigate();
+  const projectId = title.toLowerCase().replace(/ /g, "-");
+
   return (
-    <Card className="overflow-hidden transition-all hover:scale-105 hover:shadow-xl bg-white/5 backdrop-blur-sm border-white/10">
+    <Card 
+      className="overflow-hidden transition-all hover:scale-105 hover:shadow-xl bg-white/5 backdrop-blur-sm border-white/10 cursor-pointer" 
+      onClick={() => navigate(`/project/${projectId}`)}
+    >
       <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
       <CardHeader>
         <CardTitle className="text-white">{title}</CardTitle>

@@ -1,41 +1,35 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
+
+import { Mail, Phone, Linkedin } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-  };
-
   return (
     <section className="py-20 animate-fade-up">
       <h2 className="text-3xl font-bold text-white mb-12 text-center">
         Get In Touch
       </h2>
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-6">
-        <div>
-          <Input placeholder="Your Name" className="bg-white/5 border-white/10 text-white placeholder:text-white/50" />
+      <div className="max-w-md mx-auto space-y-8">
+        <div className="flex items-center space-x-4 text-white/80 hover:text-white transition-colors">
+          <Mail className="w-6 h-6" />
+          <a href="mailto:moritzgruss@hotmail.se" className="text-lg">
+            moritzgruss@hotmail.se
+          </a>
         </div>
-        <div>
-          <Input type="email" placeholder="Your Email" className="bg-white/5 border-white/10 text-white placeholder:text-white/50" />
+        <div className="flex items-center space-x-4 text-white/80 hover:text-white transition-colors">
+          <Phone className="w-6 h-6" />
+          <span className="text-lg">+46 123 456 789</span>
         </div>
-        <div>
-          <Textarea
-            placeholder="Your Message"
-            className="bg-white/5 border-white/10 text-white placeholder:text-white/50 min-h-[150px]"
-          />
+        <div className="flex items-center space-x-4 text-white/80 hover:text-white transition-colors">
+          <Linkedin className="w-6 h-6" />
+          <a 
+            href="https://linkedin.com/in/your-profile" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-lg"
+          >
+            LinkedIn Profile
+          </a>
         </div>
-        <Button type="submit" className="w-full bg-white text-background hover:bg-white/90">
-          Send Message
-        </Button>
-      </form>
+      </div>
     </section>
   );
 };

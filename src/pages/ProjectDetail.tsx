@@ -5,8 +5,8 @@ import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const projectDetails = {
-  "ai-chat-application": {
-    title: "AI Chat Application",
+  "Generating the Mandelbrot set": {
+    title: "Generating the Mandelbrot set",
     description: "A real-time chat application powered by artificial intelligence",
     fullDescription: `This project implements a sophisticated real-time chat interface that leverages 
     artificial intelligence to provide intelligent responses. Built with React for the frontend and 
@@ -20,8 +20,8 @@ const projectDetails = {
     technologies: ["React", "Python", "TensorFlow"],
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
   },
-  "data-visualization-dashboard": {
-    title: "Data Visualization Dashboard",
+  "Horrorgame in Virtual Reality": {
+    title: "Horrorgame in Virtual Reality",
     description: "Interactive dashboard for visualizing complex datasets",
     fullDescription: `This dashboard provides intuitive visualization tools for complex data analysis. 
     Built with D3.js for powerful data visualization capabilities and MongoDB for efficient data storage.
@@ -34,8 +34,23 @@ const projectDetails = {
     technologies: ["D3.js", "Node.js", "MongoDB"],
     imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
   },
-  "blockchain-explorer": {
-    title: "Blockchain Explorer",
+  "Snake on the Arduino Chipkit": {
+    title: "Snake on the Arduino Chipkit",
+    description: "Tool for exploring and analyzing blockchain transactions",
+    fullDescription: `A comprehensive blockchain explorer that allows users to analyze transactions, 
+    smart contracts, and blockchain data. Built with Web3.js for blockchain interaction and React 
+    for the user interface.
+    
+    Key Features:
+    • Real-time transaction tracking
+    • Smart contract analysis
+    • Address monitoring
+    • Transaction history visualization`,
+    technologies: ["Solidity", "Web3.js", "React"],
+    imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+  },
+  "Training a Neural Network on MNIST": {
+    title: "Training a Neural Network on MNIST",
     description: "Tool for exploring and analyzing blockchain transactions",
     fullDescription: `A comprehensive blockchain explorer that allows users to analyze transactions, 
     smart contracts, and blockchain data. Built with Web3.js for blockchain interaction and React 

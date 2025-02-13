@@ -3,19 +3,25 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "AI Chat Application",
+      title: "Generating the Mandelbrot set",
       description: "A real-time chat application powered by artificial intelligence",
       technologies: ["React", "Python", "TensorFlow"],
       imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     },
     {
-      title: "Data Visualization Dashboard",
+      title: "Horrorgame in Virtual Reality",
       description: "Interactive dashboard for visualizing complex datasets",
       technologies: ["D3.js", "Node.js", "MongoDB"],
       imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
     },
     {
-      title: "Blockchain Explorer",
+      title: "Snake on the Arduino Chipkit",
+      description: "Tool for exploring and analyzing blockchain transactions",
+      technologies: ["Solidity", "Web3.js", "React"],
+      imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    },
+    {
+      title: "Training a Neural Network on MNIST",
       description: "Tool for exploring and analyzing blockchain transactions",
       technologies: ["Solidity", "Web3.js", "React"],
       imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",

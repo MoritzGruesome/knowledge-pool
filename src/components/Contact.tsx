@@ -16,12 +16,12 @@ const Contact = () => {
         </div>
         <div className="flex items-center space-x-4 text-white/80 hover:text-white transition-colors">
           <Phone className="w-6 h-6" />
-          <span className="text-lg">+46 123 456 789</span>
+          <span className="text-lg">+31 6 15 18 40 36</span>
         </div>
         <div className="flex items-center space-x-4 text-white/80 hover:text-white transition-colors">
           <Linkedin className="w-6 h-6" />
           <a 
-            href="https://linkedin.com/in/your-profile" 
+            href="https://www.linkedin.com/in/moritz-grüss-b92b79282/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-lg"

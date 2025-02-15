@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/MyWebsite/", // Replace this with your actual repository name
+  base: "/knowledge-pool/", // Replace this with your actual repository name
   server: {
     host: "::",
     port: 8080,

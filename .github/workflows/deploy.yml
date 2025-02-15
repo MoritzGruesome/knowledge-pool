@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "gh-pages" ] # Changed from main to gh-pages
   workflow_dispatch:
 
 permissions:

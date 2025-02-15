@@ -9,19 +9,18 @@ interface ProjectCardProps {
   description: string;
   technologies: string[];
   imageUrl: string;
-  videoUrl?: string; // Optional video/GIF URL
+  videoUrl?: string;
 }
 
 const ProjectCard = ({ title, description, technologies, imageUrl, videoUrl }: ProjectCardProps) => {
   const navigate = useNavigate();
-  const projectId = title.toLowerCase().replace(/ /g, "-");
 
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
         <Card 
           className="overflow-hidden transition-all hover:scale-105 hover:shadow-xl bg-white/5 backdrop-blur-sm border-white/10 cursor-pointer" 
-          onClick={() => navigate(`/project/${projectId}`)}
+          onClick={() => navigate(`/project/${title}`)}
         >
           <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
           <CardHeader>

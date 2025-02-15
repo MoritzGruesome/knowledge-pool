@@ -35,6 +35,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+
+      - name: Debug - List Uploaded Artifacts
+        run: ls -la /home/runner/work/_temp
+        
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

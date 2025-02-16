@@ -4,6 +4,8 @@ import mandelbrot from "../assets/mandelbrot.png";
 import horror from "../assets/horror.png";
 import snake from "../assets/snake.png";
 import mnist from "../assets/mnist.png";
+import Dijkstra from "../assets/Dijkstra.jpeg";
+import Asteroids from "../assets/Asteroids.jpeg";
 
 const Projects = () => {
   const projects = [
@@ -30,6 +32,18 @@ const Projects = () => {
       description: "Tool for exploring and analyzing blockchain transactions",
       technologies: ["Solidity", "Web3.js", "React"],
       imageUrl: mnist,
+    },
+    {
+      title: "Path finding using Dijkstra's algorithm",
+      description: "Implementation of Dijkstra's algorithm for finding shortest paths in graphs",
+      technologies: ["Python", "NetworkX", "Matplotlib"],
+      imageUrl: Dijkstra,
+    },
+    {
+      title: "Teaching Asteroids using reinforcement learning",
+      description: "Training an AI agent to play the classic Asteroids game using deep reinforcement learning",
+      technologies: ["Python", "PyTorch", "OpenAI Gym"],
+      imageUrl: Asteroids,
     },
   ];
 

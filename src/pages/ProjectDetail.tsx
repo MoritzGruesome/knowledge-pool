@@ -7,6 +7,8 @@ import mandelbrot from "../assets/mandelbrot.png";
 import horror from "../assets/horror.png";
 import snake from "../assets/snake.png";
 import mnist from "../assets/mnist.png";
+import Dijkstra from "../assets/Dijkstra.jpeg";
+import Asteroids from "../assets/Asteroids.jpeg";
 
 const projectDetails = {
   "Generating the Mandelbrot set": {
@@ -67,6 +69,34 @@ const projectDetails = {
     • Transaction history visualization`,
     technologies: ["Solidity", "Web3.js", "React"],
     imageUrl: mnist,
+  },
+  "Path finding using Dijkstra's algorithm": {
+    title: "Path finding using Dijkstra's algorithm",
+    description: "Implementation of Dijkstra's algorithm for finding shortest paths in graphs",
+    fullDescription: `A Python implementation of Dijkstra's algorithm for finding the shortest paths in weighted graphs. 
+    The project includes visualization of the path-finding process using NetworkX and Matplotlib.
+    
+    Key Features:
+    • Interactive graph creation
+    • Real-time path visualization
+    • Support for weighted edges
+    • Performance optimization techniques`,
+    technologies: ["Python", "NetworkX", "Matplotlib"],
+    imageUrl: Dijkstra,
+  },
+  "Teaching Asteroids using reinforcement learning": {
+    title: "Teaching Asteroids using reinforcement learning",
+    description: "Training an AI agent to play the classic Asteroids game using deep reinforcement learning",
+    fullDescription: `An implementation of deep reinforcement learning to teach an AI agent to play the classic 
+    Asteroids game. The project uses PyTorch for the neural network and OpenAI Gym for the game environment.
+    
+    Key Features:
+    • Deep Q-Learning implementation
+    • Custom Asteroids environment
+    • Performance metrics tracking
+    • Visualization of learning progress`,
+    technologies: ["Python", "PyTorch", "OpenAI Gym"],
+    imageUrl: Asteroids,
   },
 };
 

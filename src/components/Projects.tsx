@@ -1,4 +1,9 @@
+
 import ProjectCard from "./ProjectCard";
+import mandelbrot from "../assets/mandelbrot.png";
+import horror from "../assets/horror.png";
+import snake from "../assets/snake.png";
+import mnist from "../assets/mnist.png";
 
 const Projects = () => {
   const projects = [
@@ -6,25 +11,25 @@ const Projects = () => {
       title: "Generating the Mandelbrot set",
       description: "A real-time chat application powered by artificial intelligence",
       technologies: ["React", "Python", "TensorFlow"],
-      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      imageUrl: mandelbrot,
     },
     {
       title: "Horrorgame in Virtual Reality",
       description: "Interactive dashboard for visualizing complex datasets",
       technologies: ["D3.js", "Node.js", "MongoDB"],
-      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      imageUrl: horror,
     },
     {
       title: "Snake on the Arduino Chipkit",
       description: "Tool for exploring and analyzing blockchain transactions",
       technologies: ["Solidity", "Web3.js", "React"],
-      imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      imageUrl: snake,
     },
     {
       title: "Training a Neural Network on MNIST",
       description: "Tool for exploring and analyzing blockchain transactions",
       technologies: ["Solidity", "Web3.js", "React"],
-      imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      imageUrl: mnist,
     },
   ];
 

@@ -3,6 +3,10 @@ import { useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import mandelbrot from "../assets/mandelbrot.png";
+import horror from "../assets/horror.png";
+import snake from "../assets/snake.png";
+import mnist from "../assets/mnist.png";
 
 const projectDetails = {
   "Generating the Mandelbrot set": {
@@ -18,7 +22,7 @@ const projectDetails = {
     • Seamless user interface
     • Scalable architecture`,
     technologies: ["React", "Python", "TensorFlow"],
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    imageUrl: mandelbrot,
   },
   "Horrorgame in Virtual Reality": {
     title: "Horrorgame in Virtual Reality",
@@ -32,7 +36,7 @@ const projectDetails = {
     • Customizable visualizations
     • Advanced filtering options`,
     technologies: ["D3.js", "Node.js", "MongoDB"],
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    imageUrl: horror,
   },
   "Snake on the Arduino Chipkit": {
     title: "Snake on the Arduino Chipkit",
@@ -47,7 +51,7 @@ const projectDetails = {
     • Address monitoring
     • Transaction history visualization`,
     technologies: ["Solidity", "Web3.js", "React"],
-    imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    imageUrl: snake,
   },
   "Training a Neural Network on MNIST": {
     title: "Training a Neural Network on MNIST",
@@ -62,7 +66,7 @@ const projectDetails = {
     • Address monitoring
     • Transaction history visualization`,
     technologies: ["Solidity", "Web3.js", "React"],
-    imageUrl: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    imageUrl: mnist,
   },
 };
 

@@ -10,39 +10,39 @@ import Asteroids from "../assets/Asteroids.jpeg";
 const Projects = () => {
   const projects = [
     {
-      title: "Generating the Mandelbrot set",
-      description: "A real-time chat application powered by artificial intelligence",
-      technologies: ["React", "Python", "TensorFlow"],
+      title: "Exploring the Mandelbrot set",
+      description: "Generating a graphical representation of the Mandelbrot set",
+      technologies: ["Elixir"],
       imageUrl: mandelbrot,
     },
     {
       title: "Horrorgame in Virtual Reality",
-      description: "Interactive dashboard for visualizing complex datasets",
-      technologies: ["D3.js", "Node.js", "MongoDB"],
+      description: "Creating a virtual-reality based horrorgame",
+      technologies: ["C#", "Unity"],
       imageUrl: horror,
     },
     {
       title: "Snake on the Arduino Chipkit",
-      description: "Tool for exploring and analyzing blockchain transactions",
-      technologies: ["Solidity", "Web3.js", "React"],
+      description: "creating a snake-inspired game running on arduino",
+      technologies: ["C", "Arduino"],
       imageUrl: snake,
     },
     {
-      title: "Training a Neural Network on MNIST",
-      description: "Tool for exploring and analyzing blockchain transactions",
-      technologies: ["Solidity", "Web3.js", "React"],
+      title: "Implementing a neural network from scratch",
+      description: "Training a neural network on hand-written digits using MNIST",
+      technologies: ["Python", "NumPy", "MNIST"],
       imageUrl: mnist,
     },
     {
       title: "Path finding using Dijkstra's algorithm",
       description: "Implementation of Dijkstra's algorithm for finding shortest paths in graphs",
-      technologies: ["Python", "NetworkX", "Matplotlib"],
+      technologies: ["Java"],
       imageUrl: Dijkstra,
     },
     {
       title: "Teaching Asteroids using reinforcement learning",
-      description: "Training an AI agent to play the classic Asteroids game using deep reinforcement learning",
-      technologies: ["Python", "PyTorch", "OpenAI Gym"],
+      description: "Training an AI agent to play the classic Asteroids game using Deep Q-learning",
+      technologies: ["Python", "PyTorch", "NumPy"],
       imageUrl: Asteroids,
     },
   ];

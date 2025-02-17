@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/knowledge-pool/", // Updated to match the knowledge-pool repository
+  base: "/", // Updated since this is now served from the root of moritzgruesome.github.io
   server: {
     host: "::",
     port: 8080,

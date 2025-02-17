@@ -18,12 +18,9 @@ const projectDetails = {
     
     The files can be found here:`,
     
-     
-    
-    
-    
     technologies: ["Elixir"],
     imageUrl: mandelbrot,
+    link: "https://github.com/MoritzGruesome/Projects/tree/main/Mandelbrot",
   },
   "Horrorgame in Virtual Reality": {
     title: "Creating a virtual-reality based horrorgame",
@@ -33,64 +30,43 @@ const projectDetails = {
     `,
     technologies: ["C#", "Unity"],
     imageUrl: horror,
+    link: "https://github.com/PontusAhlin/HorrorGame"
   },
   "Snake on the Arduino Chipkit": {
     title: "Snake on the Arduino Chipkit",
-    description: "Tool for exploring and analyzing blockchain transactions",
-    fullDescription: `A comprehensive blockchain explorer that allows users to analyze transactions, 
-    smart contracts, and blockchain data. Built with Web3.js for blockchain interaction and React 
-    for the user interface.
-    
-    Key Features:
-    • Real-time transaction tracking
-    • Smart contract analysis
-    • Address monitoring
-    • Transaction history visualization`,
-    technologies: ["Solidity", "Web3.js", "React"],
+    description: "creating a snake-inspired game running on arduino",
+    fullDescription: `In this project I built a snake inspired game on the ChipKIT. The game was written in C and invovled a lot of interfacing width the ChipKIT such as controlling the small screen and the buttons. The game itself was remained quite simple in its content. Three game modes were made ranging from easy to difficult. A simple robot snake was implemented aswell and an algorithm for placing down obstacles in the different game difficulties. The entire Git-hub repository including the files can be found at the link below:`,
+
+    technologies: ["C", "Arduino"],
     imageUrl: snake,
+    link: "https://github.com/MoritzGruesome/Projects/tree/main/Snake%20Game"
   },
   "Implementing a neural network from scratch": {
-    title: "Training a Neural Network on MNIST",
-    description: "Tool for exploring and analyzing blockchain transactions",
-    fullDescription: `A comprehensive blockchain explorer that allows users to analyze transactions, 
-    smart contracts, and blockchain data. Built with Web3.js for blockchain interaction and React 
-    for the user interface.
-    
-    Key Features:
-    • Real-time transaction tracking
-    • Smart contract analysis
-    • Address monitoring
-    • Transaction history visualization`,
-    technologies: ["Solidity", "Web3.js", "React"],
+    title: "Implementing a neural network from scratch",
+    description: "Training a neural network on hand-written digits using MNIST",
+    fullDescription: `In this personal project, I implemented an artifical neural network using only the Numpy library in python. I was guided via the work by Michael Nielson and his book on Neural Networks and Deep learning. All of the code seen in the github is my own work, except for the DrawingBoard file which I implemented with the help of chatGPT. This gives the user the ability to try out a trained model using a board which can be drawn on using the curser.
+
+    `,
+    technologies: ["Python", "NumPy", "MNIST"],
     imageUrl: mnist,
+    link: "https://github.com/MoritzGruesome/Projects/tree/main/neuralNet"
   },
   "Path finding using Dijkstra's algorithm": {
     title: "Path finding using Dijkstra's algorithm",
     description: "Implementation of Dijkstra's algorithm for finding shortest paths in graphs",
-    fullDescription: `A Python implementation of Dijkstra's algorithm for finding the shortest paths in weighted graphs. 
-    The project includes visualization of the path-finding process using NetworkX and Matplotlib.
-    
-    Key Features:
-    • Interactive graph creation
-    • Real-time path visualization
-    • Support for weighted edges
-    • Performance optimization techniques`,
-    technologies: ["Python", "NetworkX", "Matplotlib"],
+    fullDescription: `The code presented was part of an assignment I completed for my Algorithms and Data structures course at KTH. The code was written in Java. This was my implementation of a path solving program, using Dijkstras Algorithm. The code was implemented using a queue, Hash table and of course the algorithm itself. You can try out the code by going to the GitHub link below and entering any two european cities as shown. The result will be the shortest time to get from one city to the next.`,
+    technologies: ["Java"],
     imageUrl: Dijkstra,
+    link: "https://github.com/MoritzGruesome/Projects/tree/main/Dijkstras%20Algorithm%20final"
   },
   "Teaching Asteroids using reinforcement learning": {
     title: "Teaching Asteroids using reinforcement learning",
-    description: "Training an AI agent to play the classic Asteroids game using deep reinforcement learning",
-    fullDescription: `An implementation of deep reinforcement learning to teach an AI agent to play the classic 
-    Asteroids game. The project uses PyTorch for the neural network and OpenAI Gym for the game environment.
-    
-    Key Features:
-    • Deep Q-Learning implementation
-    • Custom Asteroids environment
-    • Performance metrics tracking
-    • Visualization of learning progress`,
-    technologies: ["Python", "PyTorch", "OpenAI Gym"],
+    description: "Training an AI agent to play the classic Asteroids game using Deep Q-learning",
+    fullDescription: `This project was a part of my Artificial Intelligence and Applied Methods course at KTH. The goal of the project was to develop a software agent which could play the classic Atari game: Asteroids. In order to achieve this, we used a reinforcement learning algorithm called Deep Q-Learning. If you are interested to read more, a copy of the report is also linked below.`,
+    technologies: ["Python", "PyTorch", "NumPy"],
     imageUrl: Asteroids,
+    link: "https://github.com/MoritzGruesome/Projects/tree/main/RL%20Asteroids%20with%20plotting",
+    link2: "https://github.com/MoritzGruesome/Projects/blob/main/RL%20Asteroids%20with%20plotting/Project%20Report.pdf"
   },
 };
 
@@ -138,6 +114,30 @@ const ProjectDetail = () => {
         <div className="text-white/80 space-y-4 whitespace-pre-line">
           {project.fullDescription}
         </div>
+        {project.link && (
+          <div className="mt-4">
+            <a 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 underline hover:text-blue-300"
+            >
+              View Project on GitHub
+            </a>
+          </div>
+        )}
+        {project.link2 && (
+          <div className="mt-4">
+            <a 
+              href={project.link2} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 underline hover:text-blue-300"
+            >
+              View the report here
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
